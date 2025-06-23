@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       //home: const MyHomePage(title: 'Data Pass'),
 
       //home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: const Popup(),
+      home: const PopupCrud(),
     );
   }
 }
