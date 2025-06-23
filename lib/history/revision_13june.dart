@@ -69,7 +69,7 @@ class _AnimatedScreenState extends State<AnimatedScreen>
             textInputAction: TextInputAction.done,
             maxLines: 1,
             maxLength: 50,
-            obscureText: false, //it replaces the text characters with dots
+            obscureText: false,
             decoration: InputDecoration(
               hintText: 'Enter name',
               labelText: 'Name',
@@ -103,7 +103,7 @@ class _AnimatedScreenState extends State<AnimatedScreen>
             curve: Curves.easeInOut,
             width: 200,
             height: 100,
-            // color: Colors.amber, ---can't pass color to both container and box decoration at the same time
+
             alignment: Alignment.center,
             padding: EdgeInsets.all(16),
             margin: EdgeInsets.all(8),
@@ -115,10 +115,7 @@ class _AnimatedScreenState extends State<AnimatedScreen>
             child: Text('Motion!'),
           ),
           SizedBox(height: 30),
-          RotatedBox(
-            quarterTurns: 4, // 1 = 90°, 2 = 180°, 3 = 270°, 4 = 360°
-            child: Text('Rotated'),
-          ),
+          RotatedBox(quarterTurns: 4, child: Text('Rotated')),
 
           SizedBox(height: 30),
           Center(
@@ -126,7 +123,7 @@ class _AnimatedScreenState extends State<AnimatedScreen>
               animation: _controller,
               builder: (context, child) {
                 return Transform.rotate(
-                  angle: _controller.value * 2 * pi, // full rotation
+                  angle: _controller.value * 2 * pi,
                   child: AnimatedContainer(
                     duration: Duration(seconds: 1),
                     width: 150,
