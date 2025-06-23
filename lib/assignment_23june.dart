@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class PopupCrud extends StatefulWidget {
   const PopupCrud({super.key});
@@ -15,6 +16,11 @@ class _PopupCrudState extends State<PopupCrud> {
     setState(() {
       menuItems.add('Item ${menuItems.length + 1}');
     });
+    Fluttertoast.showToast(
+      msg: 'Item Added!',
+      toastLength: Toast.LENGTH_SHORT,
+      gravity: ToastGravity.SNACKBAR,
+    );
   }
 
   void _editItem() {
@@ -34,6 +40,11 @@ class _PopupCrudState extends State<PopupCrud> {
                     setState(() {
                       menuItems[selectedItemIndex!] = controller.text;
                     });
+                    Fluttertoast.showToast(
+                      msg: 'Item Edited!',
+                      toastLength: Toast.LENGTH_SHORT,
+                      gravity: ToastGravity.SNACKBAR,
+                    );
                     Navigator.pop(context);
                   },
                   child: const Text('Save'),
@@ -51,6 +62,11 @@ class _PopupCrudState extends State<PopupCrud> {
         selectedItemIndex = null;
       });
     }
+    Fluttertoast.showToast(
+      msg: 'Item Deleted!',
+      toastLength: Toast.LENGTH_SHORT,
+      gravity: ToastGravity.SNACKBAR,
+    );
   }
 
   void _onSelectItem(int index) {
