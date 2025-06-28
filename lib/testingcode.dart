@@ -16,10 +16,6 @@ class _TestingState extends State<Testing> with SingleTickerProviderStateMixin {
     super.initState();
   }
 
-  @override
-  void dispose() {
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +24,7 @@ class _TestingState extends State<Testing> with SingleTickerProviderStateMixin {
       body: Center(
         child: Column(
           children: [
-            Text('${widget.mydata}'),
+            Text(widget.mydata),
             ElevatedButton(
               onPressed: () => Navigator.pop(context, returnedData),
               child: const Text('Go back with data'),

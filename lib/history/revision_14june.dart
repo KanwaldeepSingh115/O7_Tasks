@@ -41,16 +41,15 @@ class _MyButtonsState extends State<MyButtons> {
             ),
             TextButton(
               onPressed: () {},
-              child: Text("Login"),
               style: TextButton.styleFrom(
                 foregroundColor: Colors.blue,
                 padding: EdgeInsets.all(16),
                 textStyle: TextStyle(fontSize: 18),
               ),
+              child: Text("Login"),
             ),
             OutlinedButton(
               onPressed: () {},
-              child: Text("Sign Up"),
               // style:ButtonStyle(
               //   backgroundColor: MaterialStateProperty.all(Colors.blue),         // Background color of the button
               //   foregroundColor: MaterialStateProperty.all(Colors.white),        // Text/Icon color
@@ -74,6 +73,7 @@ class _MyButtonsState extends State<MyButtons> {
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
               ),
+              child: Text("Sign Up"),
             ),
             IconButton(
               icon: Icon(Icons.favorite),
@@ -88,7 +88,6 @@ class _MyButtonsState extends State<MyButtons> {
             ),
             FloatingActionButton(
               onPressed: () {},
-              child: Icon(Icons.add),
               tooltip: 'Add Item',
               backgroundColor: Colors.purple,
               foregroundColor: Colors.white,
@@ -97,6 +96,7 @@ class _MyButtonsState extends State<MyButtons> {
                 borderRadius: BorderRadius.circular(16),
               ),
               heroTag: "fab1",
+              child: Icon(Icons.add),
             ),
             DropdownButton<String>(
               value: selectedValue,

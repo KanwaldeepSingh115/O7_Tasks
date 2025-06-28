@@ -97,7 +97,7 @@ class _PopupCrudState extends State<PopupCrud> {
                         size: 18,
                         color:
                             selectedItemIndex == index
-                                ? Colors.green
+                                ? Colors.blue
                                 : Colors.grey,
                       ),
                       const SizedBox(width: 8),

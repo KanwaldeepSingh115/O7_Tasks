@@ -18,7 +18,7 @@ class _DataPassingScreenState extends State<DataPassingScreen> {
       body: Center(child:
           Column(
             children: [
-          Text("${widget.mydata}"),
+          Text(widget.mydata),
           ElevatedButton(
             onPressed: () {
               Navigator.pop(context, returnData);
