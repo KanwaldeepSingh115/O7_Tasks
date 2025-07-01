@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:o7_tasks/history/assignment_26june.dart';
-import 'package:o7_tasks/revision_27june.dart';
-import 'package:o7_tasks/revision_28june.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:o7_tasks/revisin_1july.dart';
 import 'package:o7_tasks/testingcode.dart';
 
 void main() {
@@ -20,7 +19,16 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
 
-      home: const DrawerPro(),
+      locale: Locale('en'),
+      supportedLocales: const [Locale('en'), Locale('hi')],
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+
+      //home: const DateTimePicker(),
+      home: FilterList(),
     );
   }
 }
