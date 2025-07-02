@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:o7_tasks/revisin_1july.dart';
+import 'package:o7_tasks/history/revision_30june.dart';
+import 'package:o7_tasks/history/revisin_1july.dart';
+import 'package:o7_tasks/revision_2july.dart';
+import 'package:o7_tasks/testing.dart';
 import 'package:o7_tasks/testingcode.dart';
 
 void main() {
@@ -27,8 +30,8 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
 
-      //home: const DateTimePicker(),
-      home: FilterList(),
+      //home: const FilterList(),
+      home: Task2July(),
     );
   }
 }
