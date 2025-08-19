@@ -12,8 +12,7 @@ class Accelerometer extends StatefulWidget {
 
 class _AccelerometerState extends State<Accelerometer> {
   double x = 0, y = 0, z = 0;
-  final double threshold = 2.5490
-  ;
+  final double threshold = 2.5490;
   DateTime? lastShakeTime;
 
   @override
@@ -58,3 +57,4 @@ class _AccelerometerState extends State<Accelerometer> {
     );
   }
 }
+
