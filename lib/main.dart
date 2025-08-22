@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:o7_tasks/history/revision_29july.dart';
 import 'package:o7_tasks/testingcode.dart';
-import 'package:o7_tasks/work_11aug.dart';
-import 'package:o7_tasks/work_12aug.dart';
+import 'package:timezone/data/latest.dart' as tz;
 
 void main() {
+  tz.initializeTimeZones();
   runApp(const MyApp());
 }
 
@@ -28,8 +29,7 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
 
-      home: const GeoMaps(),
-      // home: Revision29July(),
+       home: Revision29July(),
     );
   }
 }
