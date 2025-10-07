@@ -1,7 +1,7 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_practice/models/data_model.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:o7_tasks/data_model.dart';
 
 class TaskFbdb extends StatefulWidget {
   const TaskFbdb({super.key});
