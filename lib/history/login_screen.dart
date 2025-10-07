@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:o7_tasks/history/assignment_15june3.dart';
+import 'package:o7_tasks/history/otp_screen.dart';
 
 
 class Login extends StatefulWidget {

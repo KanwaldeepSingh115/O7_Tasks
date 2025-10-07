@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:o7_tasks/history/assignment_15june.dart';
+import 'package:o7_tasks/history/login_screen.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});

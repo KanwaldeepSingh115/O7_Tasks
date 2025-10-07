@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:o7_tasks/history/revision_10june2.dart';
+import 'package:o7_tasks/history/ui_components.dart';
 
 class MainApp2 extends StatelessWidget {
   const MainApp2({super.key});
